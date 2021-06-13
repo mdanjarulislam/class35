@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,h1,h2,h3,h4,h5,h6,p {
+    
+    
+    font-family: 'Roboto', sans-serif;
+
+}
+span,a,b{
+    font-family: 'Rubik', sans-serif;
+}
+.background{
+    background: #ddd;
+}
+.p-item{
+    background: #ffff !important;
+    border-radius: 5px;
+}
+.header-top h6{
+    color:cornflowerblue;
+    font: size 18px;
+    margin-bottom: 10px;
+}
+.header-top h4{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #111;
+    position: relative;
+    transition: .8s;
+    
+}
+.header-top h4:hover{
+    color: tomato;
+}
+.header-top h4::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 505px;
+    height: 0px;
+    width: 0px;
+    background: #ddd;
+    transition: .6s;
+    border: 1px solid #000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header-top h4:hover::before{
+    background: #ddd;
+    width: 90px;
+    opacity: 1;
+    visibility: visible;
+     
+}
+
+.header-top p{
+    width: 50%;
+    margin: auto;
+    margin-top: 35px;
+    color: #111;
+
+}
+
+/* Pricing table */
+
+.p-item h5 {
+    margin-top: 20px;
+    color: #000;
+    font-weight: 600;
+}
+.p-item h1 {
+    font-size: 35px;
+    margin-top: 20px;
+    color:#000;
+    font-weight: 700;
+}
+.extra-p {
+    margin-top: 30px;
+    color: #000;
+    position: relative;
+    margin-bottom: 90px;
+}
+.extra-p::after {
+    content: "";
+    height: 1px;
+    width: 150px;
+    position: absolute;
+    top: 70px;
+    right: 105px;
+    background: #fafafa;
+}
+
+.p-item h6 {
+    color: #000;
+    font-size: 18px;
+}
+.p-item h6 {
+    margin-top: 20px;
+    color: #000;
+}
+.p-item p {
+    margin-top: 25px;
+    color: #000;
+    font-weight: 500;
+}
+.p-item .button {
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    background: blue;
+    height: 60px;
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+    border-radius: 50px;
+    line-height: 60px;
+    transition: .7s;
+}
+.p-item .button:hover{
+    background: orange;
+    color: blue;
+    letter-spacing: .5px;
+}
+/* Banner section */
+.banner-img{
+    
+ background: url(./image/free-bg.jpg) no-repeat top center;
+ padding: 100px 0;
+ background-size: 100%;
+ background-attachment: fixed;
+ position: relative;
+ z-index: 1;
+}
+.banner-img::after{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(31, 31, 226, 0.6);
+    z-index: -1;
+}
+.banner-item h6 {
+    color: #fff;
+    margin-top: -35px;
+    font-size: 18px;
+} 
+
+.banner-item h2 {
+    color: #fff;
+    width: 40%;
+    margin: auto;
+    font-size: 35px;
+    margin-top: 15px;
+    transition: .7s;
+    position: relative;
+}
+
+.banner-item h2:hover{
+    color:orangered;
+}
+.banner-item h2::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 0;
+    width: 0;
+    border: 2px solid aqua;
+    transition: .8s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.banner-item h2:hover::before{
+    width: 160px;
+    visibility: visible;
+    opacity: 1;
+}
+.banner-item p {
+    color: #fff;
+    width: 35%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.banner-item .button{
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    background: blue;
+    height: 60px;
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+    border-radius: 50px;
+    line-height: 60px;
+    transition: .7s;
+     
+    
+}
+.banner-item .button:hover{
+    background: #fff;
+    color: blue;
+    letter-spacing: .5px;
+   
+}
